@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="TeApp.Views.Register">
+    <ContentPage.Content >
+        <ScrollView IsEnabled="True">
+            <StackLayout BackgroundColor="#FFF">
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button Clicked="ReturnToLogin_Clicked" TextColor="{StaticResource GreenDefault}" BackgroundColor="Transparent" FontSize="23" Text="&#60;" Grid.Column="0" Grid.Row="0" ></Button>
+                    <Frame HasShadow="False" VerticalOptions="CenterAndExpand"  Grid.Row="0" Grid.Column="1">
+                        <Label Text="TeApp" TextColor="{StaticResource GreenDefault}" BackgroundColor="Transparent"  FontSize="23"/>
+                    </Frame>
+                </Grid>
+                <BoxView Color="#CCFFEE" HeightRequest="1" />
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="1"  />
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Frame StyleClass="EntryFrame" Grid.Row="0">
+                        <Entry Style="{StaticResource InputFields}"  Placeholder="Nome Responsável"  />
+                    </Frame>
+                    <Frame StyleClass="EntryFrame" Grid.Row="1">
+                        <Entry Style="{StaticResource InputFields}" Placeholder="E-mail"/>
+                    </Frame>
+                    <Frame StyleClass="EntryFrame" Grid.Row="2">
+                        <Entry Style="{StaticResource InputFields}" Placeholder="Senha" IsPassword="True"/>
+                    </Frame>
+                    <Frame StyleClass="EntryFrame" Grid.Row="3">
+                        <Entry Style="{StaticResource InputFields}" Placeholder="Confirmar Senha" IsPassword="True" />
+                    </Frame>
+
+                    <BoxView Color="#B3BDC8"   Grid.Row="4"/>
+
+                    <Frame StyleClass="EntryFrame" Grid.Row="5">
+                        <Entry Style="{StaticResource InputFields}" Placeholder="Nome da Criança"/>
+                    </Frame>
+                    <Frame StyleClass="EntryFrame" Grid.Row="6">
+                        <DatePicker Format="dd/MM/yyyy" FontFamily="Montserrat" Style="{StaticResource InputFields}"/>
+                    </Frame>
+                    <Frame StyleClass="EntryFrame" Grid.Row="7">
+                        <Picker Style="{StaticResource InputFields}" Title="Sexo" FontFamily="Monserat">
+                            <Picker.Items>
+                                <x:String>Masculino</x:String>
+                                <x:String>Feminino</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+
+                    <Button Style="{StaticResource ButtonStyled}" Text="Confirmar" Grid.Row="8"/>
+
+                    <Button x:Name="ReturnToLogin" Clicked="ReturnToLogin_Clicked"
+                            Style="{StaticResource ButtonStyled}" BackgroundColor="{StaticResource RedLogo}" 
+                            Text="Voltar" Grid.Row="9"
+                            />
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
