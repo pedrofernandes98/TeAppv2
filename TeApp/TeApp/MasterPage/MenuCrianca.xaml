@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TeApp.Views.CriancaViews"
+             x:Class="TeApp.MasterPage.MenuCrianca">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Clicked="btnMudarVisao_Clicked" x:Name="btnMudarVisao" Text="Mudar Visão" />
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <!--Conteúdo-->
+    <MasterDetailPage.Detail>
+        <NavigationPage BarBackgroundColor="{StaticResource GreenDefault}" BarTextColor="White">
+            <x:Arguments>
+                <local:CriancaMain />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

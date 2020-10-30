@@ -21,5 +21,10 @@ namespace TeApp.MasterPage
         {
             App.Current.MainPage = new NavigationPage(new Login());
         }
+
+        private void btnMudarVisao_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new TeApp.MasterPage.MenuCrianca();
+        }
     }
 }

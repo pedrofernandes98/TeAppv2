@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:img="clr-namespace:TeApp.Helpers"
+             Title="Menu Principal"
+             BackgroundColor="#FFF"
+             x:Class="TeApp.Views.CriancaViews.CriancaMain">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Bem-Vindo {User} !" Grid.Column="0"
+                       FontFamily="Monserat" FontSize="30" VerticalOptions="Center"/>
+                <Image Grid.Column="1" x:Name="logo"
+                       Source="{img:ImageResource TeApp.Resources.Images.logov2.png}" 
+                       WidthRequest="120" HeightRequest="120" HorizontalOptions="EndAndExpand"></Image>
+            </Grid>
+            <BoxView Color="#CCFFEE" HeightRequest="1" />
+
+            <ImageButton Clicked="img_meuhumor_Clicked"
+                             x:Name="img_meuhumor" Source="{img:ImageResource TeApp.Resources.Images.meuhumor.png}" 
+                             WidthRequest="300" HeightRequest="300" Scale="0.60"
+                             HorizontalOptions="Center" BackgroundColor="#fff"></ImageButton>
+            <Label Text="Meu Humor" HorizontalOptions="CenterAndExpand"
+                       FontSize="20" FontFamily="Monserat"   
+                       VerticalOptions="StartAndExpand" Margin="0, -60, 0, 0"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

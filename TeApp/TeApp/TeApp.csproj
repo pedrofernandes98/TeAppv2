@@ -18,6 +18,7 @@
     <None Remove="Resources\Images\editar.png" />
     <None Remove="Resources\Images\logo.png" />
     <None Remove="Resources\Images\logov2.png" />
+    <None Remove="Resources\Images\meuhumor.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
     <EmbeddedResource Include="Resources\Images\editar.png" />
     <EmbeddedResource Include="Resources\Images\logo.png" />
     <EmbeddedResource Include="Resources\Images\logov2.png" />
+    <EmbeddedResource Include="Resources\Images\meuhumor.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +39,12 @@
 
   <ItemGroup>
     <EmbeddedResource Update="MasterPage\Menu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterPage\MenuCrianca.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CriancaViews\CriancaMain.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">

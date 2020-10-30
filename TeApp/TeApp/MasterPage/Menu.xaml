@@ -10,7 +10,7 @@
                 <Button Text="Menu"/>
                 <Button Text="Acompanhamento de Humor" />
                 <Button Text="Alterar Cadastro" />
-                <Button Text="Mudar Visão" />
+                <Button Clicked="btnMudarVisao_Clicked" x:Name="btnMudarVisao" Text="Mudar Visão" />
                 <Button x:Name="btnSair" Clicked="btnSair_Clicked" Text="Sair" />
             </StackLayout>
         </ContentPage>
