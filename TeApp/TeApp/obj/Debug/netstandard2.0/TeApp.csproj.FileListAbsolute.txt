@@ -16,5 +16,6 @@ C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\MasterPage\Menu.xaml.g.c
 C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\Views\ResponsavelViews\ResponsavelMain.xaml.g.cs
 C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\Views\ResponsavelViews\AcompanharHumor.xaml.g.cs
 C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\Views\CriancaViews\CriancaMain.xaml.g.cs
-C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csprojAssemblyReference.cache
 C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\MasterPage\MenuCrianca.xaml.g.cs
+C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\Views\CriancaViews\HumorCrianca.xaml.g.cs
+C:\Dev\TeApp\TeApp\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csprojAssemblyReference.cache
