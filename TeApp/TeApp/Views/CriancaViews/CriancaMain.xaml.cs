@@ -19,7 +19,7 @@ namespace TeApp.Views.CriancaViews
 
         private void img_meuhumor_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new HumorCrianca());
         }
     }
 }

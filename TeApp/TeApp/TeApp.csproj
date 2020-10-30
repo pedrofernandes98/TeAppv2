@@ -15,10 +15,16 @@
     <None Remove="Resources\Fonts\Montserrat-Light.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
     <None Remove="Resources\Images\acompanhar.png" />
+    <None Remove="Resources\Images\angry.png" />
     <None Remove="Resources\Images\editar.png" />
+    <None Remove="Resources\Images\feliz.png" />
     <None Remove="Resources\Images\logo.png" />
     <None Remove="Resources\Images\logov2.png" />
+    <None Remove="Resources\Images\medo.png" />
     <None Remove="Resources\Images\meuhumor.png" />
+    <None Remove="Resources\Images\nojo.png" />
+    <None Remove="Resources\Images\surpreso.png" />
+    <None Remove="Resources\Images\triste.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,10 +32,16 @@
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Light.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
     <EmbeddedResource Include="Resources\Images\acompanhar.png" />
+    <EmbeddedResource Include="Resources\Images\angry.png" />
     <EmbeddedResource Include="Resources\Images\editar.png" />
+    <EmbeddedResource Include="Resources\Images\feliz.png" />
     <EmbeddedResource Include="Resources\Images\logo.png" />
     <EmbeddedResource Include="Resources\Images\logov2.png" />
+    <EmbeddedResource Include="Resources\Images\medo.png" />
     <EmbeddedResource Include="Resources\Images\meuhumor.png" />
+    <EmbeddedResource Include="Resources\Images\nojo.png" />
+    <EmbeddedResource Include="Resources\Images\surpreso.png" />
+    <EmbeddedResource Include="Resources\Images\triste.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +57,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CriancaViews\CriancaMain.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CriancaViews\HumorCrianca.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">
