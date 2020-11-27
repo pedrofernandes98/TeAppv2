@@ -4,6 +4,9 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "TeApp.Android.dll" comes first in this list. */
 		"TeApp.Android.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"TeApp.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

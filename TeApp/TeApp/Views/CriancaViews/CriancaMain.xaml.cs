@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Net.Http;
+using TeApp.Apis;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,14 +9,18 @@ namespace TeApp.Views.CriancaViews
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CriancaMain : ContentPage
     {
+        private HumorApi _humorApi;
+
         public CriancaMain()
         {
             InitializeComponent();
+            this._humorApi = new HumorApi(new HttpClient());
         }
 
-        private void img_meuhumor_Clicked(object sender, EventArgs e)
+        private async void img_meuhumor_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new HumorCrianca());
+            var humores = await this._humorApi.GetHumores();
+            await Navigation.PushAsync(new HumorCrianca());
         }
     }
 }

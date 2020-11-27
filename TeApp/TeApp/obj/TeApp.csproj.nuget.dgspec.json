@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\TeApp\\TeApp\\TeApp\\TeApp\\TeApp.csproj": {}
+    "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\TeApp\\TeApp\\TeApp\\TeApp\\TeApp.csproj": {
+    "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\TeApp\\TeApp\\TeApp\\TeApp\\TeApp.csproj",
+        "projectUniqueName": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj",
         "projectName": "TeApp",
-        "projectPath": "C:\\Dev\\TeApp\\TeApp\\TeApp\\TeApp\\TeApp.csproj",
-        "packagesPath": "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\TeApp\\TeApp\\TeApp\\TeApp\\obj\\",
+        "projectPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro Fernandes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -49,6 +48,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
@@ -68,7 +71,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
