@@ -11,7 +11,7 @@ namespace TeApp
         {
             InitializeComponent();
 
-            MainPage = new MasterPage.MenuCrianca();
+            MainPage = new Login();
         }
 
         protected override void OnStart()
