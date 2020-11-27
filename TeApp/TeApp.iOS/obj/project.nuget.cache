@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "4CrcJ3yFqFk6AK/MqgK/+aOFUKKAPuUydtV4Uzn2WVhvJ1i3Ib+h7/XkmxQyo3mcbomtqzPImhs938w3MFmwAQ==",
+  "dgSpecHash": "RrbMmPWLeT0YO3HjCfpA020FS73bJa7Bs7nt1tlFynIs2Ya+4S3JXdZhji0i6VIDCwdsgHSzORO9yYl3gt3C8w==",
   "success": true,
-  "projectFilePath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
+  "projectFilePath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
-    "C:\\Users\\Guilherme\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],

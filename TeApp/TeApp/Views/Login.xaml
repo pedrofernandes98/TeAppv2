@@ -13,10 +13,10 @@
             <Grid VerticalOptions="CenterAndExpand" >
                 
                 <Frame StyleClass="EntryFrame" Grid.Row="1">
-                    <Entry Style="{StaticResource InputFields}" Placeholder="E-mail"  />
+                    <Entry x:Name="TxtEmail" Style="{StaticResource InputFields}" Placeholder="E-mail"  />
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="2">
-                    <Entry Style="{StaticResource InputFields}" Placeholder="Senha" IsPassword="True"/>
+                    <Entry x:Name="TxtPassword" Style="{StaticResource InputFields}" Placeholder="Senha" IsPassword="True"/>
                 </Frame>
                 <Label Text="Esqueci minha senha" TextColor="{StaticResource ForgotMyPassword}"
                        FontFamily="MonseratRegular"
