@@ -24,9 +24,9 @@ namespace TeApp.Views
             
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private  void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+             Navigation.PushAsync(new Register());
         }
 
         private async void Entrar_Clicked(object sender, EventArgs e)
