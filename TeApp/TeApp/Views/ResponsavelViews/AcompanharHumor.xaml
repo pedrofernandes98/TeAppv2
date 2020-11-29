@@ -14,7 +14,7 @@
                     </Frame>
                 </Grid>
 
-                <Grid>
+                <!--<Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
@@ -29,11 +29,43 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                </Grid>
+                </Grid>-->
 
-                <Frame BorderColor="LightGreen" HasShadow="False" Grid.Row="0" CornerRadius="30">
+                <CollectionView x:Name="ListOfHumors">
+                    <CollectionView.EmptyView>
+                        <Label Text="Nenhum resultado foi encontrado" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"
+                               FontSize="Medium" Padding="0,300,0,0"
+                               />
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Margin="10">
+                                <Frame BorderColor="LightGreen" HasShadow="False"  CornerRadius="30">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="50"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Grid.Row="0"   Text="{Binding Data,StringFormat='{0:dd/MM/yyyy}'}" FontFamily="Monserrat" Grid.Column="0"  VerticalOptions="CenterAndExpand" FontSize="18"/>
+                                        <Label Grid.Row="0" Text="{Binding Humor, StringFormat='- {0}'}" Grid.Column="1" FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
+                                        <Button Grid.Row="0" Grid.Column="2" Text="+"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Frame BorderColor="LightGreen" HasShadow="False" Grid.Row="0" CornerRadius="30" Margin="10">
                     <Grid>
                         <Grid.RowDefinitions>
+                            <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
 
@@ -45,7 +77,9 @@
 
                         <Label Grid.Row="0"   Text="01/01/2020" FontFamily="Monserrat" Grid.Column="0"  VerticalOptions="CenterAndExpand" FontSize="18"/>
                         <Label Grid.Row="0" Text="- Feliz" Grid.Column="1" FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
-                        <Button Grid.Row="0" Grid.Column="2" Text="+"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
+                        <Button Grid.Row="0" Grid.Column="2" Text="/"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
+
+                        <Label Grid.Row="1" Grid.ColumnSpan="3" Text="- Fomos brincar no parque"  FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
                     </Grid>
                 </Frame>
 
@@ -53,23 +87,6 @@
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition Width="50"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Label Grid.Row="0"   Text="01/01/2020" FontFamily="Monserrat" Grid.Column="0"  VerticalOptions="CenterAndExpand" FontSize="18"/>
-                        <Label Grid.Row="0" Text="- Feliz" Grid.Column="1" FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
-                        <Button Grid.Row="0" Grid.Column="2" Text="+"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
-                    </Grid>
-                </Frame>
-
-                <Frame BorderColor="LightGreen" HasShadow="False" Grid.Row="2" CornerRadius="30">
-                    <Grid>
-                        <Grid.RowDefinitions>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
 
@@ -81,9 +98,14 @@
 
                         <Label Grid.Row="0"   Text="01/01/2020" FontFamily="Monserrat" Grid.Column="0"  VerticalOptions="CenterAndExpand" FontSize="18"/>
                         <Label Grid.Row="0" Text="- Feliz" Grid.Column="1" FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
-                        <Button Grid.Row="0" Grid.Column="2" Text="+"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
+                        <Button Grid.Row="0" Grid.Column="2" Text="/"  BackgroundColor="{StaticResource GreenDefault}"  CornerRadius="30"  FontSize="16"/>
+
+                        <Label Grid.Row="1" Text="- Tomou sorvete"  FontSize="20" FontFamily="Monserrat" VerticalOptions="CenterAndExpand"/>
+
                     </Grid>
                 </Frame>
+
+                
 
                 <Frame BorderColor="LightGreen" HasShadow="False" Grid.Row="3" CornerRadius="30">
                     <Grid>
