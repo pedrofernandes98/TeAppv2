@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RrbMmPWLeT0YO3HjCfpA020FS73bJa7Bs7nt1tlFynIs2Ya+4S3JXdZhji0i6VIDCwdsgHSzORO9yYl3gt3C8w==",
+  "dgSpecHash": "Zima3uaUuEpJVBTVjWxszm/0aDn7vBWe4fZimnNwHFmWtno+rhCb1T6kZ4CDHR/0N151j0WAjy+r0Ca4Re3VYQ==",
   "success": true,
   "projectFilePath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\rg.plugins.popup\\2.0.0.7\\rg.plugins.popup.2.0.0.7.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",

@@ -29,13 +29,14 @@
                 <ImageButton Grid.Row="0" Grid.Column="0"
                              x:Name="img_acompanharHumor" Source="{img:ImageResource TeApp.Resources.Images.feliz.png}" 
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center" BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center" BackgroundColor="#fff"
+                             Clicked="img_acompanharHumor_Clicked"></ImageButton>
                 <Label Grid.Row="1" Grid.Column="0"
                        Text="Feliz" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
                        VerticalOptions="StartAndExpand" Margin="0, -15, 0, 0"/>
                 <ImageButton Grid.Row="0" Grid.Column="1"
-                             x:Name="img_edit" Source="{img:ImageResource TeApp.Resources.Images.triste.png}"
+                             x:Name="img_sad" Source="{img:ImageResource TeApp.Resources.Images.triste.png}"
                              WidthRequest="150" HeightRequest="150" 
                              HorizontalOptions="Center"  BackgroundColor="#fff"></ImageButton>
                 <Label Grid.Row="1" Grid.Column="1"

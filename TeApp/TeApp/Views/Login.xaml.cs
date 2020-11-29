@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using TeApp.Apis;
+using TeApp.Helpers.Loading;
 using TeApp.Models;
 using TeApp.Models.Autenticacao;
 using Xamarin.Forms;
@@ -34,6 +36,10 @@ namespace TeApp.Views
             string email = TxtEmail.Text;
             string password = TxtPassword.Text;
 
+            await Navigation.PushPopupAsync(new Loading());
+
+            //await Task.Delay(3000);
+
             //TODO: Chamar a função de InsertUsuario
             var resultado = await this._autenticacaoApi.LoginResponsavel(new AutenticacaoModel
             {
@@ -50,8 +56,8 @@ namespace TeApp.Views
             {
                 await DisplayAlert("Erro!", "Usuário não encontrado!", "OK");
             }
-            
-            
+
+            await Navigation.PopAllPopupAsync();
             
         }
     }

@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"TeApp.Android.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
+		"Rg.Plugins.Popup.dll",
 		"System.Text.Encodings.Web.dll",
 		"System.Text.Json.dll",
 		"TeApp.dll",

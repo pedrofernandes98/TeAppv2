@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,12 @@ namespace TeApp.Views.CriancaViews
         {
             InitializeComponent();
         }
+
+        private async void img_acompanharHumor_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupFeliz());
+        }
+
+
     }
 }

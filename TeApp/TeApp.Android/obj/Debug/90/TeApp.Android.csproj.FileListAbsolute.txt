@@ -1419,3 +1419,7 @@ C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\stamp\_ConvertReso
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\android\assets\Rg.Plugins.Popup.dll
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\android\assets\Rg.Plugins.Popup.pdb
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\android\src\crc643dd37f507f3d9710\PopupPageRenderer.java
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp.Android\obj\Debug\90\android\src\crc64fdbeeba101bd56dc\RgGestureDetectorListener.java

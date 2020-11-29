@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "evy/kNwraEv7qguI0dDHiB16HakGGKZEy6ZbcHCMRczZkSJmLEv4bCN/t7honDYPq6pC7ho9+pV+9CyyX//QcQ==",
+  "dgSpecHash": "Bltim3YPH9e5Afh8Ku0TzSqJgQo2fPof+2mx61ee8HLv8PwUvd8eTCG4w/QV0Kcmk9cV9MuQ6XgGJ4Mgxi/Ovg==",
   "success": true,
   "projectFilePath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\rg.plugins.popup\\2.0.0.7\\rg.plugins.popup.2.0.0.7.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
