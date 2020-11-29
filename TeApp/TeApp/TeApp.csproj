@@ -52,6 +52,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Popups\PopupNojo.xaml.cs">
+      <DependentUpon>PopupNojo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupSurpreso.xaml.cs">
+      <DependentUpon>PopupSurpreso.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupRaiva.xaml.cs">
+      <DependentUpon>PopupRaiva.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupMedo.xaml.cs">
+      <DependentUpon>PopupMedo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupTriste.xaml.cs">
+      <DependentUpon>PopupTriste.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Helpers\Loading\Loading.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

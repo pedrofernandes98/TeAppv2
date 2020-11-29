@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             CloseWhenBackgroundIsClicked="False"
+             xmlns:img="clr-namespace:TeApp.Helpers"
+             x:Class="TeApp.Popups.PopupTriste">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#fff" Padding="24">
+            
+            <ImageButton Grid.Row="0" Grid.Column="0"
+                             x:Name="img_acompanharHumor" Source="{img:ImageResource TeApp.Resources.Images.triste.png}" 
+                             WidthRequest="150" HeightRequest="150" 
+                             HorizontalOptions="Center" BackgroundColor="#fff"></ImageButton>
+            <Label Text="Triste" FontSize="30" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="1" Grid.Column="0" 
+                       BackgroundColor="{StaticResource GreenDefault}"
+                        Text="Confirmar" TextColor="#FFF"
+                        CornerRadius="25"
+                        x:Name="btnConfirm"
+                        Clicked="btnConfirm_Clicked"
+                        />
+                <Button Grid.Row="1" Grid.Column="1" 
+                       BackgroundColor="Red" Text="Cancelar" TextColor="#FFF"
+                        CornerRadius="25"
+                        x:Name="btnCancel"
+                        Clicked="btnCancel_Clicked"
+                        />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</popup:PopupPage>

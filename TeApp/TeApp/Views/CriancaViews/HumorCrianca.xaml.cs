@@ -23,6 +23,29 @@ namespace TeApp.Views.CriancaViews
             await Navigation.PushPopupAsync(new Popups.PopupFeliz());
         }
 
+        private async void img_sad_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupTriste());
+        }
 
+        private async void img_medo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupMedo());
+        }
+
+        private async void img_raiva_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupRaiva());
+        }
+
+        private async void img_surpresa_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupSurpreso());
+        }
+
+        private async void img_nojo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushPopupAsync(new Popups.PopupNojo());
+        }
     }
 }

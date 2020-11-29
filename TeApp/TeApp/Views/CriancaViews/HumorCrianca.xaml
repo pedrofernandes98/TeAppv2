@@ -38,7 +38,8 @@
                 <ImageButton Grid.Row="0" Grid.Column="1"
                              x:Name="img_sad" Source="{img:ImageResource TeApp.Resources.Images.triste.png}"
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center"  BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center"  BackgroundColor="#fff"
+                             Clicked="img_sad_Clicked"></ImageButton>
                 <Label Grid.Row="1" Grid.Column="1"
                        Text="Triste" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
@@ -47,7 +48,8 @@
                 <ImageButton Grid.Row="2" Grid.Column="0"
                              x:Name="img_medo" Source="{img:ImageResource TeApp.Resources.Images.medo.png}" 
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center" BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center" BackgroundColor="#fff"
+                             Clicked="img_medo_Clicked"></ImageButton>
                 <Label Grid.Row="3" Grid.Column="0"
                        Text="Medo" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
@@ -55,7 +57,8 @@
                 <ImageButton Grid.Row="2" Grid.Column="1"
                              x:Name="img_raiva" Source="{img:ImageResource TeApp.Resources.Images.angry.png}"
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center"  BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center"  BackgroundColor="#fff"
+                             Clicked="img_raiva_Clicked"></ImageButton>
                 <Label Grid.Row="3" Grid.Column="1"
                        Text="Raiva" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
@@ -65,7 +68,8 @@
                 <ImageButton Grid.Row="4" Grid.Column="0"
                              x:Name="img_surpresa" Source="{img:ImageResource TeApp.Resources.Images.surpreso.png}" 
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center" BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center" BackgroundColor="#fff"
+                             Clicked="img_surpresa_Clicked"></ImageButton>
                 <Label Grid.Row="5" Grid.Column="0"
                        Text="Surpreso" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
@@ -73,7 +77,8 @@
                 <ImageButton Grid.Row="4" Grid.Column="1"
                              x:Name="img_nojo" Source="{img:ImageResource TeApp.Resources.Images.nojo.png}"
                              WidthRequest="150" HeightRequest="150" 
-                             HorizontalOptions="Center"  BackgroundColor="#fff"></ImageButton>
+                             HorizontalOptions="Center"  BackgroundColor="#fff"
+                             Clicked="img_nojo_Clicked"></ImageButton>
                 <Label Grid.Row="5" Grid.Column="1"
                        Text="Nojo" HorizontalOptions="CenterAndExpand"
                        FontSize="20" FontFamily="Monserat"   
