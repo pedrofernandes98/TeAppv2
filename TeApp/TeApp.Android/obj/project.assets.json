@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "FreshEssentials/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FreshEssentials.Droid.dll": {},
+          "lib/MonoAndroid10/FreshEssentials.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FreshEssentials.Droid.dll": {},
+          "lib/MonoAndroid10/FreshEssentials.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
@@ -869,6 +880,32 @@
     }
   },
   "libraries": {
+    "FreshEssentials/2.0.0": {
+      "sha512": "BY8Ah25OUwU2SFtLGg9eZIBW1DBHe0G7DapmQFnXYN7VZAWIACCT/VoDuGw4j7CgCJkN65rzwTwd0lwf9B05Tg==",
+      "type": "package",
+      "path": "freshessentials/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freshessentials.2.0.0.nupkg.sha512",
+        "freshessentials.nuspec",
+        "lib/MonoAndroid10/FreshEssentials.Droid.dll",
+        "lib/MonoAndroid10/FreshEssentials.Droid.dll.mdb",
+        "lib/MonoAndroid10/FreshEssentials.dll",
+        "lib/MonoAndroid10/FreshEssentials.dll.mdb",
+        "lib/Xamarin.iOS10/FreshEssentials.dll",
+        "lib/Xamarin.iOS10/FreshEssentials.dll.mdb",
+        "lib/Xamarin.iOS10/FreshEssentials.iOS.dll",
+        "lib/Xamarin.iOS10/FreshEssentials.iOS.dll.mdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/FreshEssentials.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/FreshEssentials.dll.mdb",
+        "lib/uap10.0/FreshEssentials.UWP.dll",
+        "lib/uap10.0/FreshEssentials.UWP.pdb",
+        "lib/uap10.0/FreshEssentials.UWP.pri",
+        "lib/uap10.0/FreshEssentials.dll",
+        "lib/uap10.0/FreshEssentials.pdb"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
       "type": "package",
@@ -2173,6 +2210,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "FreshEssentials >= 2.0.0",
       "Rg.Plugins.Popup >= 2.0.0.7",
       "TeApp >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
@@ -2221,6 +2259,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "FreshEssentials": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Rg.Plugins.Popup": {
             "target": "Package",
             "version": "[2.0.0.7, )"

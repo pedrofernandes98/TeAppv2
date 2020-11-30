@@ -48,7 +48,8 @@ namespace TeApp.Views.ResponsavelViews
                     {
                         Humor = descricao.FirstOrDefault().ToString(),
                         Data = humor.data,
-                        Observacao = humor.observacao
+                        Observacao = humor.observacao,
+                        HasObservacao = string.IsNullOrEmpty(humor.observacao)
                     };
 
                     lista.Add(myHumor); //Adiciona esse objeto em uma lista

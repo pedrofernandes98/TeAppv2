@@ -60,11 +60,11 @@ C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\bin\Debug\netstandard2.0\TeApp.dll
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\bin\Debug\netstandard2.0\ref\TeApp.dll
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\bin\Debug\netstandard2.0\TeApp.pdb
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Helpers\Loading\Loading.xaml.g.cs
-C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csproj.CoreCompileInputs.cache
-C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupFeliz.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupTriste.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupMedo.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupNojo.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupRaiva.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupSurpreso.xaml.g.cs
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csproj.CoreCompileInputs.cache
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp

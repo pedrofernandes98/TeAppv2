@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4iyPPs4BjkAfgsAZuBNujAt1ri36MD78Yw/wHQo91yii3/7xg4fH5GoFtQ0rPoZcopaOqGY6ob8qNWVuDEC95w==",
+  "dgSpecHash": "DoAxZVXI4Dq3aonRuI5V7mfX3qXVmcB/SxgvGPebGXmMiDLJDrVTYpSrtIZRKOPT0Ii8pdAfyZfnbUWiQ/SUZw==",
   "success": true,
   "projectFilePath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.Android\\TeApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\freshessentials\\2.0.0\\freshessentials.2.0.0.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\rg.plugins.popup\\2.0.0.7\\rg.plugins.popup.2.0.0.7.nupkg.sha512",
     "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

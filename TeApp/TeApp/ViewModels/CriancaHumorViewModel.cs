@@ -10,5 +10,7 @@ namespace TeApp.ViewModels
         public DateTime Data { get; set; }
         public string Observacao { get; set; }
 
+        public bool HasObservacao { get; set; }
+
     }
 }
