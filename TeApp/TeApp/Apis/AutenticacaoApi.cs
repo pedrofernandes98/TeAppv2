@@ -12,16 +12,16 @@ namespace TeApp.Apis
         {
         }
 
-        public async Task<BaseResultApiModel> LoginResponsavel(AutenticacaoModel autenticacao)
+        public async Task<ResultApiModel<UserModel>> LoginResponsavel(AutenticacaoModel autenticacao)
         {
             try
             {
-                await this.PostAsync<object>(this._baseAddress.AbsoluteUri, autenticacao);
-                return new BaseResultApiModel();
+                var resultado = await this.PostAsync<UserModel>(this._baseAddress.AbsoluteUri, autenticacao);
+                return new ResultApiModel<UserModel>(resultado);
             }
             catch (HttpResponseException e)
             {
-                return new BaseResultApiModel(e.Errors);
+                return new ResultApiModel<UserModel>(e.Errors);
             }
         }
     }

@@ -38,28 +38,28 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Frame StyleClass="EntryFrame" Grid.Row="0">
-                        <Entry Style="{StaticResource InputFields}"  Placeholder="Nome Responsável"  />
+                        <Entry x:Name="TxtNomeResponsavel" Style="{StaticResource InputFields}"  Placeholder="Nome Responsável"  />
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="1">
-                        <Entry Style="{StaticResource InputFields}" Placeholder="E-mail"/>
+                        <Entry x:Name="TxtEmail" Style="{StaticResource InputFields}" Placeholder="E-mail"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="2">
-                        <Entry Style="{StaticResource InputFields}" Placeholder="Senha" IsPassword="True"/>
+                        <Entry x:Name="TxtPassword" Style="{StaticResource InputFields}" Placeholder="Senha" IsPassword="True"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="3">
-                        <Entry Style="{StaticResource InputFields}" Placeholder="Confirmar Senha" IsPassword="True" />
+                        <Entry x:Name="TxtConfirmPassword" Style="{StaticResource InputFields}" Placeholder="Confirmar Senha" IsPassword="True" />
                     </Frame>
 
                     <BoxView Color="#B3BDC8"   Grid.Row="4"/>
 
                     <Frame StyleClass="EntryFrame" Grid.Row="5">
-                        <Entry Style="{StaticResource InputFields}" Placeholder="Nome da Criança"/>
+                        <Entry x:Name="TxtNomeCrianca" Style="{StaticResource InputFields}" Placeholder="Nome da Criança"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="6">
-                        <DatePicker Format="dd/MM/yyyy" FontFamily="Montserrat" Style="{StaticResource InputFields}"/>
+                        <DatePicker x:Name="DpkDataNasc" Format="dd/MM/yyyy" FontFamily="Montserrat" Style="{StaticResource InputFields}"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="7">
-                        <Picker Style="{StaticResource InputFields}" Title="Sexo" FontFamily="Monserat">
+                        <Picker x:Name="PSexo" Style="{StaticResource InputFields}" Title="Sexo" FontFamily="Monserat">
                             <Picker.Items>
                                 <x:String>Masculino</x:String>
                                 <x:String>Feminino</x:String>
@@ -67,7 +67,7 @@
                         </Picker>
                     </Frame>
 
-                    <Button Style="{StaticResource ButtonStyled}" Text="Confirmar" Grid.Row="8"/>
+                    <Button Style="{StaticResource ButtonStyled}" Clicked="Button_Clicked" Text="Confirmar" Grid.Row="8"/>
 
                     <Button x:Name="ReturnToLogin" Clicked="ReturnToLogin_Clicked"
                             Style="{StaticResource ButtonStyled}" BackgroundColor="{StaticResource RedLogo}" 

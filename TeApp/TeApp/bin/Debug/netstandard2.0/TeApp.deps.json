@@ -10,6 +10,7 @@
       "TeApp/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "Rg.Plugins.Popup": "2.0.0.7",
           "System.Text.Json": "5.0.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -33,6 +34,17 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Rg.Plugins.Popup/2.0.0.7": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "2.0.0.7",
+            "fileVersion": "2.0.0.7"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -166,6 +178,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/2.0.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIq0elo2zHSGjF2ARKSrBeI2W+HaQhWy5oOf1jikKEpzm2tDvDTCYWecqGVrn/Glly3BhW4A3NdEiBBjbB78Eg==",
+      "path": "rg.plugins.popup/2.0.0.7",
+      "hashPath": "rg.plugins.popup.2.0.0.7.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

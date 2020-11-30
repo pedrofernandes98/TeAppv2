@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 using TeApp.Apis;
+using TeApp.Helpers.Loading;
+using TeApp.Models;
 using TeApp.Models.Autenticacao;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,24 +23,42 @@ namespace TeApp.Views
             this._usuarioApi = new UsuarioApi(new HttpClient());
             this._autenticacaoApi = new AutenticacaoApi(new HttpClient());
 
-            this._autenticacaoApi.LoginResponsavel(new AutenticacaoModel
-            {
-                Email = "teste",
-                Senha = "Teste"
-            });
+            
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private  void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+             Navigation.PushAsync(new Register());
         }
 
         private async void Entrar_Clicked(object sender, EventArgs e)
         {
+            string email = TxtEmail.Text;
+            string password = TxtPassword.Text;
+
+            await Navigation.PushPopupAsync(new Loading());
+
+            //await Task.Delay(3000);
+
             //TODO: Chamar a função de InsertUsuario
+            var resultado = await this._autenticacaoApi.LoginResponsavel(new AutenticacaoModel
+            {
+                Email = email,
+                Senha = password
+            });
 
+            if (resultado.Success)
+            {
+                GlobalUserModel.UserModel = resultado.Content;
+                App.Current.MainPage = new MasterPage.Menu();
+            }
+            else
+            {
+                await DisplayAlert("Erro!", "Usuário não encontrado!", "OK");
+            }
 
-            App.Current.MainPage = new MasterPage.Menu();
+            await Navigation.PopAllPopupAsync();
+            
         }
     }
 }

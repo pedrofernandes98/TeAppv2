@@ -4,24 +4,24 @@ namespace TeApp.Models.CriancaHumor
 {
     public class CriancaHumorModel
     {
-        public int IdHumorCrianca { get; set; }
-        public short? IdCrianca { get; set; }
-        public short? IdHumor { get; set; }
-        public DateTime Data { get; set; }
-        public string Observacao { get; set; }
+        public int idHumorCrianca { get; set; }
+        public short? idCrianca { get; set; }
+        public short? idHumor { get; set; }
+        public DateTime data { get; set; }
+        public string observacao { get; set; }
 
         public CriancaHumorModel()
         {
 
         }
 
-        public CriancaHumorModel(int idHumorCrianca, short? idCrianca, short? idHumor, DateTime data, string observacao)
+        public CriancaHumorModel(int IdHumorCrianca, short? IdCrianca, short? IdHumor, DateTime Data, string Observacao)
         {
-            IdHumorCrianca = idHumorCrianca;
-            IdCrianca = idCrianca;
-            IdHumor = idHumor;
-            Data = data;
-            Observacao = observacao;
+            idHumorCrianca = IdHumorCrianca;
+            idCrianca = IdCrianca;
+            idHumor = IdHumor;
+            data = Data;
+            observacao = Observacao;
         }
     }
 }

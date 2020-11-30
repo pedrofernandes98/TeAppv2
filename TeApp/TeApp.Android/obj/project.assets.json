@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "FreshEssentials/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/FreshEssentials.Droid.dll": {},
+          "lib/MonoAndroid10/FreshEssentials.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/FreshEssentials.Droid.dll": {},
+          "lib/MonoAndroid10/FreshEssentials.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
@@ -9,6 +20,21 @@
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Rg.Plugins.Popup/2.0.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.5.0.657"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Rg.Plugins.Popup.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Rg.Plugins.Popup.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -839,6 +865,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Rg.Plugins.Popup": "2.0.0.7",
           "System.Text.Json": "5.0.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
@@ -853,6 +880,32 @@
     }
   },
   "libraries": {
+    "FreshEssentials/2.0.0": {
+      "sha512": "BY8Ah25OUwU2SFtLGg9eZIBW1DBHe0G7DapmQFnXYN7VZAWIACCT/VoDuGw4j7CgCJkN65rzwTwd0lwf9B05Tg==",
+      "type": "package",
+      "path": "freshessentials/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freshessentials.2.0.0.nupkg.sha512",
+        "freshessentials.nuspec",
+        "lib/MonoAndroid10/FreshEssentials.Droid.dll",
+        "lib/MonoAndroid10/FreshEssentials.Droid.dll.mdb",
+        "lib/MonoAndroid10/FreshEssentials.dll",
+        "lib/MonoAndroid10/FreshEssentials.dll.mdb",
+        "lib/Xamarin.iOS10/FreshEssentials.dll",
+        "lib/Xamarin.iOS10/FreshEssentials.dll.mdb",
+        "lib/Xamarin.iOS10/FreshEssentials.iOS.dll",
+        "lib/Xamarin.iOS10/FreshEssentials.iOS.dll.mdb",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/FreshEssentials.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/FreshEssentials.dll.mdb",
+        "lib/uap10.0/FreshEssentials.UWP.dll",
+        "lib/uap10.0/FreshEssentials.UWP.pdb",
+        "lib/uap10.0/FreshEssentials.UWP.pri",
+        "lib/uap10.0/FreshEssentials.dll",
+        "lib/uap10.0/FreshEssentials.pdb"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
       "type": "package",
@@ -873,6 +926,54 @@
         "microsoft.bcl.asyncinterfaces.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Rg.Plugins.Popup/2.0.0.7": {
+      "sha512": "tIq0elo2zHSGjF2ARKSrBeI2W+HaQhWy5oOf1jikKEpzm2tDvDTCYWecqGVrn/Glly3BhW4A3NdEiBBjbB78Eg==",
+      "type": "package",
+      "path": "rg.plugins.popup/2.0.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.dll",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.xml",
+        "lib/monoandroid90/Rg.Plugins.Popup.dll",
+        "lib/monoandroid90/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid90/Rg.Plugins.Popup.xml",
+        "lib/net472/Rg.Plugins.Popup.dll",
+        "lib/net472/Rg.Plugins.Popup.pdb",
+        "lib/net472/Rg.Plugins.Popup.xml",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.dll",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.pdb",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.xml",
+        "lib/netstandard2.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard2.0/Rg.Plugins.Popup.pdb",
+        "lib/netstandard2.0/Rg.Plugins.Popup.xml",
+        "lib/tizen40/Rg.Plugins.Popup.dll",
+        "lib/tizen40/Rg.Plugins.Popup.pdb",
+        "lib/tizen40/Rg.Plugins.Popup.xml",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.dll",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.pri",
+        "lib/uap10.0.17763/Rg.Plugins.Popup.xml",
+        "lib/xamarinios10/Rg.Plugins.Popup.dll",
+        "lib/xamarinios10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinios10/Rg.Plugins.Popup.xml",
+        "lib/xamarinmac20/Rg.Plugins.Popup.dll",
+        "lib/xamarinmac20/Rg.Plugins.Popup.pdb",
+        "lib/xamarinmac20/Rg.Plugins.Popup.xml",
+        "lib/xamarintvos10/Rg.Plugins.Popup.dll",
+        "lib/xamarintvos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarintvos10/Rg.Plugins.Popup.xml",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.dll",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.xml",
+        "readme.txt",
+        "rg.plugins.popup.2.0.0.7.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -2109,30 +2210,32 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "FreshEssentials >= 2.0.0",
+      "Rg.Plugins.Popup >= 2.0.0.7",
       "TeApp >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guilherme\\.nuget\\packages\\": {},
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.Android\\TeApp.Android.csproj",
+      "projectUniqueName": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.Android\\TeApp.Android.csproj",
       "projectName": "TeApp.Android",
-      "projectPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.Android\\TeApp.Android.csproj",
-      "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.Android\\obj\\",
+      "projectPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.Android\\TeApp.Android.csproj",
+      "packagesPath": "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pedro Fernandes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2146,8 +2249,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {
-              "projectPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj"
+            "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {
+              "projectPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj"
             }
           }
         }
@@ -2156,6 +2259,14 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "FreshEssentials": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "Rg.Plugins.Popup": {
+            "target": "Package",
+            "version": "[2.0.0.7, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"

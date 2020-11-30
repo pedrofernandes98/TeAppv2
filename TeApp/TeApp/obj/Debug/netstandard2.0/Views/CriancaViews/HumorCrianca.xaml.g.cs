@@ -23,7 +23,7 @@ namespace TeApp.Views.CriancaViews {
         private global::Xamarin.Forms.ImageButton img_acompanharHumor;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ImageButton img_edit;
+        private global::Xamarin.Forms.ImageButton img_sad;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ImageButton img_medo;
@@ -42,7 +42,7 @@ namespace TeApp.Views.CriancaViews {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HumorCrianca));
             logo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "logo");
             img_acompanharHumor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_acompanharHumor");
-            img_edit = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_edit");
+            img_sad = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_sad");
             img_medo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_medo");
             img_raiva = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_raiva");
             img_surpresa = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "img_surpresa");
