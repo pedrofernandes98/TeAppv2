@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -28,7 +29,19 @@ namespace TeApp.Views.ResponsavelViews
             _humorApi = new HumorApi(new HttpClient());
             GetHumorCriancas(4);
             //Todo - Id da Criança tem de ser dinâmico e não fixo como está
+
+            //Recebe uma mensagem do Popup para dar Refreh na página
+            MessagingCenter.Subscribe<App>((App)Application.Current, "OnCategoryCreated", (sender) =>
+            {
+                GetHumorCriancas(4);
+            });
         }
+
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    GetHumorCriancas(4);
+        //}
 
         public async void GetHumorCriancas(int idCrianca)
         {
@@ -46,6 +59,8 @@ namespace TeApp.Views.ResponsavelViews
 
                     var myHumor = new CriancaHumorViewModel() //Cria um novo objeto especifico para realizar o Binding na View
                     {
+                        Id = humor.idHumorCrianca,
+                        IdCrianca = (int)humor.idCrianca,
                         Humor = descricao.FirstOrDefault().ToString(),
                         Data = humor.data,
                         Observacao = humor.observacao,
@@ -56,12 +71,23 @@ namespace TeApp.Views.ResponsavelViews
                 }
 
                 _listOfHumors = new ObservableCollection<CriancaHumorViewModel>(lista); //Converte a lista em uma ObservableCollection que é o tipo de dado reconhecido pela CollectionView
+                ListOfHumors.ItemsSource = null;
                 ListOfHumors.ItemsSource = _listOfHumors;//Define essa lista como a Fonte de Dados da CollectionView
             }
             else
             {
                 await DisplayAlert("Erro!", "Não foi possível carregar a lista de Humores. Tente novamente mais tarde!", "OK");
             }
+        }
+
+        private void Btn_AddObs(object sender, EventArgs e)
+        {
+            var eventArgs = (Button)sender;
+            var page = new Popups.PopupObservacao();
+            page.BindingContext = eventArgs.CommandParameter;
+
+            Navigation.PushPopupAsync(page);
+            
         }
     }
 }
