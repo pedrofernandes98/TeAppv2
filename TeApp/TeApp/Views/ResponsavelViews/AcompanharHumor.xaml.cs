@@ -30,7 +30,7 @@ namespace TeApp.Views.ResponsavelViews
             _humorApi = new HumorApi(new HttpClient());
             int idCrianca = GlobalUserModel.UserModel.idCrianca;
             GetHumorCriancas(idCrianca);
-            //Todo - Id da Criança tem de ser dinâmico e não fixo como está
+            
 
             //Recebe uma mensagem do Popup para dar Refreh na página
             MessagingCenter.Subscribe<App>((App)Application.Current, "OnCategoryCreated", (sender) =>

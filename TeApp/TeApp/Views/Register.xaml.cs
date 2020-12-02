@@ -39,7 +39,7 @@ namespace TeApp.Views
             string confirmPassword = TxtConfirmPassword.Text;
             string nomeCrianca = TxtNomeCrianca.Text;
             DateTime dataNasc = DpkDataNasc.Date;
-            string sexo = PSexo.SelectedItem.ToString();
+            string sexo = PSexo.SelectedItem == null ? "" : PSexo.SelectedItem.ToString();
 
             await Navigation.PushPopupAsync(new Loading());
 

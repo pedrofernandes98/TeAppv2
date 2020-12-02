@@ -2,7 +2,7 @@
 
 namespace TeApp.Models.Usuario
 {
-    class UsuarioUpdateModel
+    public class UsuarioUpdateModel
     {
         public short IdResponsavel { get; set; }
 
