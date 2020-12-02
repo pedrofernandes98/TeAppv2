@@ -68,3 +68,4 @@ C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupRa
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupSurpreso.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csproj.CoreCompileInputs.cache
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupObservacao.xaml.g.cs

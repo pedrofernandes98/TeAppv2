@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             CloseWhenBackgroundIsClicked="False"
+             x:Class="TeApp.Popups.PopupObservacao">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center" BackgroundColor="#fff" Padding="40"  WidthRequest="400">
+            <Label Text="Observação"
+                HorizontalOptions="StartAndExpand"
+                FontSize="Title" TextColor="{StaticResource GreenDefault}"/>
+            <BoxView Color="#CCFFEE" HeightRequest="1" />
+            <Entry Placeholder="Digite uma observação..." Text="{Binding Observacao}"></Entry>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="1" Grid.Column="0" 
+                       BackgroundColor="{StaticResource GreenDefault}"
+                        Text="Adicionar" TextColor="#FFF"
+                        CornerRadius="25"
+                        x:Name="btnConfirm"
+                        Clicked="btnConfirm_Clicked"
+                        CommandParameter="{Binding .}"
+                        />
+                <Button Grid.Row="1" Grid.Column="1" 
+                       BackgroundColor="Red" Text="Cancelar" TextColor="#FFF"
+                        CornerRadius="25"
+                        x:Name="btnCancel"
+                        Clicked="btnCancel_Clicked"
+                        />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</popup:PopupPage>
