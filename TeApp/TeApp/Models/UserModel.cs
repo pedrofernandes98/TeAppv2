@@ -2,7 +2,7 @@
 {
     public class UserModel
     {
-        public int IdResponsavel { get; set; }
-        public int IdCrianca { get; set; }
+        public int idResponsavel { get; set; }
+        public int idCrianca { get; set; }
     }
 }

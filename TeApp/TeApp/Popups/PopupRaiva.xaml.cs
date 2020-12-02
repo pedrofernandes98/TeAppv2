@@ -33,8 +33,8 @@ namespace TeApp.Popups
 
         private async void btnConfirm_Clicked(object sender, EventArgs e)
         {
-            int idCrianca = GlobalUserModel.UserModel.IdCrianca;
-            idCrianca = 4;
+            int idCrianca = GlobalUserModel.UserModel.idCrianca;
+            
 
             this.IsVisible = false;
 

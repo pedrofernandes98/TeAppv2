@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using TeApp.Apis;
+using TeApp.Models;
 using TeApp.Models.CriancaHumor;
 using TeApp.Models.Humor;
 using TeApp.ViewModels;
@@ -27,21 +28,16 @@ namespace TeApp.Views.ResponsavelViews
             InitializeComponent();
             _criancahumorApi = new CriancaHumorApi(new HttpClient());
             _humorApi = new HumorApi(new HttpClient());
-            GetHumorCriancas(4);
+            int idCrianca = GlobalUserModel.UserModel.idCrianca;
+            GetHumorCriancas(idCrianca);
             //Todo - Id da Criança tem de ser dinâmico e não fixo como está
 
             //Recebe uma mensagem do Popup para dar Refreh na página
             MessagingCenter.Subscribe<App>((App)Application.Current, "OnCategoryCreated", (sender) =>
             {
-                GetHumorCriancas(4);
+                GetHumorCriancas(idCrianca);
             });
         }
-
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-        //    GetHumorCriancas(4);
-        //}
 
         public async void GetHumorCriancas(int idCrianca)
         {
