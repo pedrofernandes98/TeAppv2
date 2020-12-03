@@ -7,11 +7,11 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout>
-                <Button Text="Menu"/>
-                <Button Text="Acompanhamento de Humor" />
-                <Button Text="Alterar Cadastro" />
-                <Button Clicked="btnMudarVisao_Clicked" x:Name="btnMudarVisao" Text="Mudar Visão" />
-                <Button x:Name="btnSair" Clicked="btnSair_Clicked" Text="Sair" />
+                <Button  x:Name="btnMenu" Clicked="btnMenu_Clicked" Text="Menu"/>
+                <Button  x:Name="btnAcompanharHumor" Clicked="btnAcompanharHumor_Clicked" Text="Acompanhamento de Humor" />
+                <Button  x:Name="btnAlterarCadastro" Clicked="btnAlterarCadastro_Clicked" Text="Alterar Cadastro" />
+                <Button  x:Name="btnMudarVisao" Clicked="btnMudarVisao_Clicked" Text="Mudar Visão" />
+                <Button  x:Name="btnSair" Clicked="btnSair_Clicked" Text="Sair" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

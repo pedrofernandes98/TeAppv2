@@ -54,7 +54,7 @@ namespace TeApp.Views
                 SexoCrianca = sexo
             };
 
-            //TODO: Chamar a função de InsertUsuario
+            
             var resultado = await this._usuarioApi.InsertUsuario(user);
             if (resultado.Success)
             {

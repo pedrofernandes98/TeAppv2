@@ -1491,24 +1491,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guilherme\\.nuget\\packages\\": {},
+    "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
+      "projectUniqueName": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
       "projectName": "TeApp.iOS",
-      "projectPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp.iOS\\obj\\",
+      "projectPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.iOS\\TeApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\Pedro Fernandes\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pedro Fernandes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1522,8 +1522,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {
-              "projectPath": "C:\\source\\puc\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj"
+            "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj": {
+              "projectPath": "C:\\Dev\\TeApp\\TeAppV2\\TeAppv2\\TeApp\\TeApp\\TeApp.csproj"
             }
           }
         }
