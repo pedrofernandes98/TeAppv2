@@ -13,6 +13,22 @@ namespace TeApp.Apis
         {
         }
 
+        public async Task<ResultApiModel<UsuarioModel>> GetUsuario(int idResponsavel, int idCrianca)
+        {
+            try
+            {
+                var result = await this.GetAsync<UsuarioModel>(this._baseAddress.AbsoluteUri + $"?idResponsavel={idResponsavel}&idCrianca={idCrianca}");
+                return new ResultApiModel<UsuarioModel>(result);
+            }
+            catch (HttpResponseException e)
+            {
+                if (e.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    return new ResultApiModel<UsuarioModel>(e.Errors);
+
+                return new ResultApiModel<UsuarioModel>(new List<ErrorModel>());
+            }
+        }
+
         public async Task<ResultApiModel<UserModel>> InsertUsuario(UsuarioInsertModel usuario)
         {
             try
