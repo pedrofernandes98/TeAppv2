@@ -40,7 +40,6 @@ C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\ref\TeApp.dll
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.pdb
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csproj.CoreCompileInputs.cache
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csprojAssemblyReference.cache
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\MasterPage\Menu.xaml.g.cs
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\MasterPage\MenuCrianca.xaml.g.cs
@@ -69,3 +68,4 @@ C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupSu
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csproj.CoreCompileInputs.cache
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Popups\PopupObservacao.xaml.g.cs
+C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\Views\UpdateRegister.xaml.g.cs

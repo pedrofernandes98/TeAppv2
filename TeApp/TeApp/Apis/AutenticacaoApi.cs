@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using TeApp.Excepetions;
 using TeApp.Models;
@@ -21,7 +22,10 @@ namespace TeApp.Apis
             }
             catch (HttpResponseException e)
             {
-                return new ResultApiModel<UserModel>(e.Errors);
+                if (e.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                    return new ResultApiModel<UserModel>(e.Errors);
+
+                return new ResultApiModel<UserModel>(new List<ErrorModel>());
             }
         }
     }

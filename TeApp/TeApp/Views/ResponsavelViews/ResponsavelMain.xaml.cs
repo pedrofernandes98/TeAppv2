@@ -28,7 +28,7 @@ namespace TeApp.Views.ResponsavelViews
 
         private void img_edit_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Register());
+            Navigation.PushAsync(new UpdateRegister());
         }
 
         private void img_acompanharHumor_Clicked(object sender, EventArgs e)

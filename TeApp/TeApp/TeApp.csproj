@@ -73,6 +73,9 @@
     <Compile Update="Popups\PopupTriste.xaml.cs">
       <DependentUpon>PopupTriste.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\UpdateRegister.xaml.cs">
+      <DependentUpon>UpdateRegister.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
