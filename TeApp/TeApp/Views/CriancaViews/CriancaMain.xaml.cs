@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using TeApp.Apis;
+using TeApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,7 @@ namespace TeApp.Views.CriancaViews
         {
             InitializeComponent();
             this._humorApi = new HumorApi(new HttpClient());
+            BindingContext = GlobalUserModel.UserModel;
         }
 
         private async void img_meuhumor_Clicked(object sender, EventArgs e)

@@ -77,4 +77,3 @@ C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.dll
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\ref\TeApp.dll
 C:\source\puc\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.pdb
-C:\Dev\TeApp\TeAppV2\TeAppv2\TeApp\TeApp\obj\Debug\netstandard2.0\TeApp.csprojAssemblyReference.cache

@@ -16,7 +16,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Bem-Vindo {User} !" Grid.Column="0"
+                <Label Text="{Binding nomeCrianca, StringFormat='Bem-vindo(a) {0} !'}" Grid.Column="0"
                        FontFamily="Monserat" FontSize="30" VerticalOptions="Center"/>
                 <Image Grid.Column="1" x:Name="logo"
                        Source="{img:ImageResource TeApp.Resources.Images.logov2.png}" 
