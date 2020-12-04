@@ -38,7 +38,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Frame StyleClass="EntryFrame" Grid.Row="1">
-                        <Entry x:Name="TxtNomeResponsavel" Style="{StaticResource InputFields}"  Placeholder="Nome Responsável"  />
+                        <Entry x:Name="TxtNomeResponsavel" Style="{StaticResource InputFields}"  Placeholder="Nome Responsável" Text="{Binding nomeResponsavel}"  />
                     </Frame>
                     <!--<Frame StyleClass="EntryFrame" Grid.Row="1">
                         <Entry x:Name="TxtEmail" Style="{StaticResource InputFields}" Placeholder="E-mail"/>
@@ -53,10 +53,10 @@
                     <BoxView Color="#B3BDC8"   Grid.Row="4"/>
 
                     <Frame StyleClass="EntryFrame" Grid.Row="5">
-                        <Entry x:Name="TxtNomeCrianca" Style="{StaticResource InputFields}" Placeholder="Nome da Criança"/>
+                        <Entry x:Name="TxtNomeCrianca" Style="{StaticResource InputFields}" Placeholder="Nome da Criança" Text="{Binding nomeCrianca}"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="6">
-                        <DatePicker x:Name="DpkDataNasc" Format="dd/MM/yyyy" FontFamily="Montserrat" Style="{StaticResource InputFields}"/>
+                        <DatePicker x:Name="DpkDataNasc" Format="dd/MM/yyyy" FontFamily="Montserrat" Style="{StaticResource InputFields}" Date="{Binding dataNascimentoCrianca}"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame" Grid.Row="7">
                         <Picker x:Name="PSexo" Style="{StaticResource InputFields}" Title="Sexo" FontFamily="Monserat">

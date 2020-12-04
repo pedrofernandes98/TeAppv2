@@ -22,5 +22,23 @@ namespace TeApp.MasterPage
         {
             App.Current.MainPage = new TeApp.MasterPage.MenuCrianca();
         }
+
+        private void btnAlterarCadastro_Clicked(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new UpdateRegister());
+            IsPresented = false;
+        }
+
+        private void btnMenu_Clicked(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new Menu());
+            IsPresented = false;
+        }
+
+        private void btnAcompanharHumor_Clicked(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new Views.ResponsavelViews.AcompanharHumor());
+            IsPresented = false;
+        }
     }
 }

@@ -41,6 +41,10 @@ namespace TeApp.Views.ResponsavelViews
 
         public async void GetHumorCriancas(int idCrianca)
         {
+            load.IsRunning = true;
+            load.IsVisible = true;
+            lblnoResults.IsVisible = false;
+            ListOfHumors.IsVisible = false;
             var resultado = await this._criancahumorApi.GetHumores(idCrianca); //Buscar os humores cadastrado pela criança
             var humorDescription = await this._humorApi.GetHumores();// Busca a descrição de cada humor
             var lista = new List<CriancaHumorViewModel>();
@@ -74,6 +78,19 @@ namespace TeApp.Views.ResponsavelViews
             {
                 await DisplayAlert("Erro!", "Não foi possível carregar a lista de Humores. Tente novamente mais tarde!", "OK");
             }
+
+            if(_listOfHumors.Count == 0)
+            {
+                lblnoResults.IsVisible = true;
+            }
+            else
+            {
+                lblnoResults.IsVisible = false;
+            }
+
+            load.IsRunning = false;
+            load.IsVisible = false;
+            ListOfHumors.IsVisible = true;
         }
 
         private void Btn_AddObs(object sender, EventArgs e)

@@ -24,6 +24,30 @@ namespace TeApp.Views
             InitializeComponent();
             this._usuarioApi = new UsuarioApi(new HttpClient());
             this._autenticacaoApi = new AutenticacaoApi(new HttpClient());
+
+            GetUserDataById(GlobalUserModel.UserModel.idResponsavel, GlobalUserModel.UserModel.idCrianca);
+        }
+
+        public async void GetUserDataById(int idResponsavel, int idCrianca)
+        {
+            await Navigation.PushPopupAsync(new Loading());
+
+            var resultado = await this._usuarioApi.GetUsuario(idResponsavel, idCrianca);
+
+            if (resultado.Success)
+            {
+                var dadosUsuario = resultado.Content;
+
+                PSexo.SelectedItem = dadosUsuario.sexoCrianca;
+                BindingContext = dadosUsuario;
+            }
+            else
+            {
+                await DisplayAlert("Erro!", "Erro ao buscar informações de usuário tente novamente mais tarde", "OK");
+                await Navigation.PopAsync();
+            }
+
+            await Navigation.PopAllPopupAsync();
         }
 
         private void ReturnToLogin_Clicked(object sender, EventArgs e)
