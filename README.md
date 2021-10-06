@@ -3,8 +3,6 @@ Aplicativo Mobile desenvolvido utilizando Xamarin Forms que tem como objetivo co
 
 <h1>Interfaces da aplicação</h1>
 
-- Tela de Login do Responsável
-@
-- Tela de registro de emoções
-
-- Tela de acompanhamento das emoções e registro de observações
+- [Tela de Login do Responsável](https://github.com/pedrofernandes98/TeAppv2/blob/master/teappLogin.jpeg)
+- [Tela de registro de emoções](https://github.com/pedrofernandes98/TeAppv2/blob/master/teappHumo.jpeg)
+- [Tela de acompanhamento das emoções e registro de observações](https://github.com/pedrofernandes98/TeAppv2/blob/master/teappAcompanhamento.jpeg)
